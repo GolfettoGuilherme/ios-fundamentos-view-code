@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0EA9B5E72C5D6DA20020D36D /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA9B5E62C5D6DA20020D36D /* Movie.swift */; };
+		0EA9B5EA2C5D70680020D36D /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA9B5E92C5D70680020D36D /* MovieTableViewCell.swift */; };
+		0EA9B5EC2C5D77250020D36D /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA9B5EB2C5D77250020D36D /* MovieDetailsViewController.swift */; };
+		0EA9B5EF2C5DA5D20020D36D /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA9B5EE2C5DA5D20020D36D /* MovieService.swift */; };
 		480C2CDC2AF089A900E8C875 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480C2CDB2AF089A900E8C875 /* AppDelegate.swift */; };
 		480C2CDE2AF089A900E8C875 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480C2CDD2AF089A900E8C875 /* SceneDelegate.swift */; };
 		480C2CE02AF089A900E8C875 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480C2CDF2AF089A900E8C875 /* HomeViewController.swift */; };
@@ -16,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0EA9B5E62C5D6DA20020D36D /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		0EA9B5E92C5D70680020D36D /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
+		0EA9B5EB2C5D77250020D36D /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
+		0EA9B5EE2C5DA5D20020D36D /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
 		480C2CD82AF089A900E8C875 /* Cinetopia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cinetopia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		480C2CDB2AF089A900E8C875 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		480C2CDD2AF089A900E8C875 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +45,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0EA9B5E42C5D6D850020D36D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				480C2CDF2AF089A900E8C875 /* HomeViewController.swift */,
+				480C2CEF2AF08E6300E8C875 /* MoviesViewController.swift */,
+				0EA9B5EB2C5D77250020D36D /* MovieDetailsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0EA9B5E52C5D6D930020D36D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0EA9B5E62C5D6DA20020D36D /* Movie.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0EA9B5E82C5D70490020D36D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				0EA9B5E92C5D70680020D36D /* MovieTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		0EA9B5ED2C5DA5C80020D36D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0EA9B5EE2C5DA5D20020D36D /* MovieService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		480C2CCF2AF089A900E8C875 = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +98,15 @@
 		480C2CDA2AF089A900E8C875 /* Cinetopia */ = {
 			isa = PBXGroup;
 			children = (
+				0EA9B5ED2C5DA5C80020D36D /* Services */,
+				0EA9B5E82C5D70490020D36D /* Cells */,
+				0EA9B5E52C5D6D930020D36D /* Models */,
+				0EA9B5E42C5D6D850020D36D /* ViewControllers */,
 				480C2CDB2AF089A900E8C875 /* AppDelegate.swift */,
 				480C2CDD2AF089A900E8C875 /* SceneDelegate.swift */,
-				480C2CDF2AF089A900E8C875 /* HomeViewController.swift */,
 				480C2CE42AF089AA00E8C875 /* Assets.xcassets */,
 				480C2CE62AF089AA00E8C875 /* LaunchScreen.storyboard */,
 				480C2CE92AF089AA00E8C875 /* Info.plist */,
-				480C2CEF2AF08E6300E8C875 /* MoviesViewController.swift */,
 			);
 			path = Cinetopia;
 			sourceTree = "<group>";
@@ -139,8 +183,12 @@
 			files = (
 				480C2CE02AF089A900E8C875 /* HomeViewController.swift in Sources */,
 				480C2CDC2AF089A900E8C875 /* AppDelegate.swift in Sources */,
+				0EA9B5EA2C5D70680020D36D /* MovieTableViewCell.swift in Sources */,
+				0EA9B5EC2C5D77250020D36D /* MovieDetailsViewController.swift in Sources */,
 				480C2CDE2AF089A900E8C875 /* SceneDelegate.swift in Sources */,
+				0EA9B5EF2C5DA5D20020D36D /* MovieService.swift in Sources */,
 				480C2CF02AF08E6300E8C875 /* MoviesViewController.swift in Sources */,
+				0EA9B5E72C5D6DA20020D36D /* Movie.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +332,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q6A28X826V;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Cinetopia/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -310,6 +359,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q6A28X826V;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Cinetopia/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
